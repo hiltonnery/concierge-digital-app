@@ -5,13 +5,6 @@
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5-purple)](https://vitejs.dev/)
 
-## 🌟 Demonstração
-
-🔗 **[VER DEMO AO VIVO](SUA_URL_AQUI)**
-
-### 🔐 Login de teste:
-- **Email:** admin@accenture.com  
-- **Código:** 123456
 
 ## 📱 Funcionalidades
 
@@ -23,9 +16,6 @@
 - ✅ Perfil digital personalizado
 - ✅ Design responsivo moderno
 
-## 🎨 Screenshots
-
-![Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Preview)
 
 ## 🛠️ Tecnologias
 
@@ -53,6 +43,10 @@ npm run dev
 
 # Acesse: http://localhost:5173
 \`\`\`
+
+### 🔐 Login de teste:
+- **Email:** admin@accenture.com  
+- **Código:** 123456
 
 
 ---
