@@ -28,7 +28,7 @@ echo "# Accenture Visitas - Events Platform 2025
 ## 🛠️ Como executar o projeto
 \`\`\`bash
 # Clone o repositório
-git clone https://github.com/hiltonnery/AccentureVisitas.git
+git clone https://github.com/hiltonnery/AccentureApp.git
 
 # Entre na pasta
 cd AccentureVisitas
