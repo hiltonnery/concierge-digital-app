@@ -1,63 +1,70 @@
-# Concierge Digital App - Events Platform
-Projeto desenvolvido durante a Residência Tecnológica do Porto Digital em parceria com a Accenture.
+# 🚀 Concierge Digital App – Squad 18 (Accenture)
+
+Plataforma web completa para gerenciamento de eventos corporativos com foco em experiência digital moderna, networking inteligente e gestão eficiente de agendas e palestrantes.
+
+---
+
+## 📑 Índice
+
+1. [📋 Descrição Geral do Sistema](#-descrição-geral-do-sistema)
+2. [🚀 Funcionalidades](#-funcionalidades)
+3. [🛠️ Tecnologias Utilizadas](#-tecnologias-utilizadas)
+4. [✅ Pré-requisitos](#-pré-requisitos)
+5. [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+6. [🚀 Etapas de Instalação e Execução](#-etapas-de-instalação-e-execução)
+7. [🧪 Teste a Aplicação](#-teste-a-aplicação)
+8. [🔌 Integrações Futuras (Planejado)](#-integrações-futuras-planejado)
+9. [⚠️ Licença](#️-licença)
 
 ---
 
 ## 📋 Descrição Geral do Sistema
 
-**Concierge Digital App** é um sistema web desenvolvido para oferecer uma experiência personalizada a visitantes em eventos de inovação da Accenture, com foco em proporcionar uma vivência moderna e integrada. A aplicação conta com uma interface responsiva e intuitiva, integrando autenticação segura e gestão de agenda personalizada. Com base nos interesses do usuário, o sistema entrega informações e sugestões relevantes, proporcionando uma experiência premium alinhada aos padrões de excelência da Accenture.
+**Concierge Digital App** é um sistema web desenvolvido para o gerenciamento completo de eventos corporativos, com foco em proporcionar uma experiência moderna e integrada para participantes, palestrantes e organizadores.
 
 ---
 
 ## 🚀 Funcionalidades
 
-**Sistema de Autenticação Segura**: Login com email corporativo + código de verificação para garantir acesso autorizado.
-
-**Dashboard Inteligente**: Portal centralizado com busca por IA, cards interativos e visão geral do evento em tempo real.
-
-**Gestão de Palestrantes**: Catálogo completo com perfis detalhados, modais interativos e sistema de favoritos.
-
-**Programação Dinâmica**: Agenda organizada por dias com inscrições em tempo real, categorização por temas e controle de vagas.
-
-**Agenda Pessoal**: Visualização personalizada dos eventos inscritos vs programação geral com gestão de conflitos.
-
-**QR Scanner & Networking**: Leitor integrado para check-in automático e troca de contatos entre participantes.
-
-**Perfil Digital**: Cartão de visita personalizado com QR code próprio para networking profissional.
-
-**Central de Ajuda (FAQ)**: Sistema categorizado de perguntas frequentes com busca inteligente.
-
-**Design Responsivo**: Interface mobile-first com identidade visual Accenture e efeitos glassmorphism.
+- 🔐 **Autenticação Segura** com email corporativo e código de verificação
+- 📊 **Dashboard Inteligente** com cards dinâmicos e busca por IA
+- 🎤 **Gestão de Palestrantes** com perfis, modais e favoritos
+- 🗓️ **Programação Dinâmica** com inscrições, filtros e controle de vagas
+- 🧾 **Agenda Pessoal** com conflitos visuais e sincronização
+- 📷 **QR Scanner & Networking** para check-in automático e troca de contatos
+- 🧑‍💼 **Perfil Digital com QR Code** para networking profissional
+- ❓ **Central de Ajuda (FAQ)** categorizada e com busca inteligente
+- 📱 **Design Responsivo & Glassmorphism** preparado para mobile-first
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
 ### **Frontend**
-- **React 18.3.1** - Framework principal para interface
-- **React Router DOM 6.23.1** - Sistema de roteamento SPA
-- **CSS3 Modular** - Estilização responsiva e componetizada
-- **Context API** - Gerenciamento de estado global
-- **Lucide React 0.263.1** - Biblioteca de ícones consistente
+- `React 18.3.1` – Framework principal para interface
+- `React Router DOM 6.23.1` – Sistema de roteamento SPA
+- `Context API` – Gerenciamento de estado global
+- `Lucide React 0.263.1` – Biblioteca de ícones moderna
 
-### **Build & Development**
-- **Vite 5.2.11** - Build tool moderna e servidor de desenvolvimento
-- **ESLint 8.57.0** - Linter para qualidade de código
-- **@vitejs/plugin-react 4.3.0** - Plugin oficial React para Vite
+### **Estilização**
+- `CSS Modules` – Estilização componentizada e modular
+- `Glassmorphism` – Design com transparência e profundidade
+- `Mobile-first Design` – Priorização da experiência mobile
+
+### **Build & Desenvolvimento**
+- `Vite 5.2.11` – Build tool leve e performática
+- `ESLint 8.57.0` – Linter para padronização e qualidade de código
+- `@vitejs/plugin-react 4.3.0` – Plugin oficial do React para Vite
 
 ### **Funcionalidades Especiais**
-- **QR Scanner 1.4.2** - Leitura de códigos QR para networking
-- **Local Storage** - Persistência de dados de sessão
-- **Progressive Enhancement** - Funcionalidades que melhoram progressivamente
-
-### **Integrações Externas**
-- **Glassmorphism CSS** - Design moderno com transparências
-- **Mobile-first Responsive** - Compatibilidade total com dispositivos móveis
-- **PWA Ready** - Preparado para Progressive Web App
+- `QR Scanner 1.4.2` – Leitura de códigos QR para networking e check-in
+- `LocalStorage` – Armazenamento local de dados de sessão
+- `Progressive Enhancement` – Melhoria progressiva de funcionalidades
+- `PWA Ready` – Suporte a Progressive Web App
 
 ---
 
-## 📦 Concierge Digital App - Instruções de Implantação
+## 📦 Instruções de Implantação
 
 Logo abaixo descrevemos o passo a passo completo para implantação do projeto Concierge Digital App, permitindo que qualquer pessoa possa rodar a aplicação do zero, em um novo ambiente.
 
@@ -65,12 +72,10 @@ Logo abaixo descrevemos o passo a passo completo para implantação do projeto C
 
 ## ✅ Pré-requisitos
 
-Antes de começar, certifique-se de ter instalado:
-
-- **Node.js** (versão 16 ou superior)
-- **Git** (opcional, para clonar o repositório)
-- **Navegador web moderno** (Google Chrome, Firefox, Safari, Edge)
-- **Editor de código** (VS Code recomendado)
+- [Node.js](https://nodejs.org/) v16 ou superior
+- Git (opcional)
+- Navegador moderno (Chrome, Firefox, Edge)
+- Editor de código (VS Code recomendado)
 
 ---
 
@@ -120,73 +125,63 @@ concierge-digital-app/
 └── vite.config.js
 ```
 
-Se você não possui esses arquivos ainda, clone o repositório fornecido.
+> Se você não possui esses arquivos ainda, clone o repositório fornecido.
 
 ---
 
 ## 🚀 Etapas de Instalação e Execução
 
-### **1. Clone ou baixe os arquivos do projeto**
+### 1. Clone o repositório
 
-Você pode clonar via Git:
-
-```bash
+```
 git clone https://github.com/hiltonnery/concierge-digital-app.git
 cd concierge-digital-app
 ```
 
-### **2. Instale as dependências do projeto**
-
-```bash
+### 2. Instale as dependências
+```
 npm install
 ```
 
-Isso instalará as bibliotecas necessárias, como:
-- **react** e **react-dom** (framework principal)
-- **react-router-dom** (roteamento)
-- **qr-scanner** (funcionalidade de QR)
-- **lucide-react** (ícones)
-- **vite** (build tool)
-- **eslint** (qualidade de código)
-
-### **3. Estrutura de arquivos estáticos**
-
-Verifique se os arquivos estão organizados conforme a estrutura acima. O Vite automaticamente servirá os arquivos da pasta `public/` e compilará os componentes React da pasta `src/`.
-
-### **4. Inicie o servidor de desenvolvimento**
-
-Para ambiente de desenvolvimento (com hot-reload):
-```bash
+### 3. Inicie o servidor de desenvolvimento
+```
 npm run dev
 ```
 
-
-### **5. Acesse o sistema no navegador**
-
+### 4. Acesse no navegador
 ```
 http://localhost:5173
 ```
-
-Você verá a tela de login do Concierge Digital App, com interface moderna e responsiva.
-
 ---
 
-## 🧪 Teste a aplicação
+## 🧪 Teste a Aplicação
 
-Você pode testar funcionalidades como:
+Você pode testar as seguintes funcionalidades:
 
-### **Login de Teste**
+### 🔐 Login de Teste
 - **Email:** admin@accenture.com
 - **Código:** 123456
 
-### **Funcionalidades Principais**
-- **Dashboard inteligente** com cards interativos e busca por IA
-- **Gestão de palestrantes** com modais detalhados e favoritos
-- **Sistema de inscrições** em palestras com controle de vagas
-- **Agenda personalizada** vs programação geral
-- **QR Scanner** para networking e check-in automático
-- **Perfil digital** com QR code próprio para networking
-- **FAQ categorizado** com busca inteligente por tópicos
-- **Design responsivo** otimizado para mobile e desktop
+### ✅ Funcionalidades Disponíveis para Teste
+- Dashboard inteligente com cards interativos e busca por IA
+- Gestão de palestrantes com modais detalhados e sistema de favoritos
+- Inscrição em palestras com controle de vagas e filtros por tema
+- Agenda personalizada e visualização de conflitos
+- QR Scanner para networking e check-in automático
+- Cartão de perfil com QR Code para networking digital
+- Central de Ajuda (FAQ) categorizada e com busca inteligente
+- Interface responsiva otimizada para mobile e desktop
 
 ---
+
+## 📌 Considerações Finais
+
+Este projeto é uma prova de conceito acadêmica que aplica tecnologias modernas para construir experiências automatizadas de serviço em eventos corporativos.
+
+O código está disponível para fins de aprendizado, teste e desenvolvimento futuro.
+
+---
+
+© 2025 Concierge Digital – Accenture SQUAD 18
+ 
+*Residência em Tecnologia Porto Digital*
