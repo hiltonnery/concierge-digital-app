@@ -1,10 +1,11 @@
-# AccentureApp - Events Platform
+# Concierge Digital App - Events Platform
 Projeto desenvolvido como plataforma completa para gerenciamento de eventos corporativos da Accenture.
 
+---
 
 ## 📋 Descrição Geral do Sistema
 
-**AccentureApp** é um sistema web desenvolvido para o gerenciamento completo de eventos corporativos, com foco em proporcionar uma experiência moderna e integrada para participantes, palestrantes e organizadores. A aplicação oferece uma interface responsiva e intuitiva que integra autenticação segura, gestão de agenda personalizada, networking através de QR codes e um sistema completo de informações sobre palestrantes e programação, oferecendo uma experiência premium alinhada aos padrões de excelência da Accenture.
+**Concierge Digital App** é um sistema web desenvolvido para o gerenciamento completo de eventos corporativos, com foco em proporcionar uma experiência moderna e integrada para participantes, palestrantes e organizadores. A aplicação oferece uma interface responsiva e intuitiva que integra autenticação segura, gestão de agenda personalizada, networking através de QR codes e um sistema completo de informações sobre palestrantes e programação, oferecendo uma experiência premium alinhada aos padrões de excelência da Accenture.
 
 ---
 
@@ -56,9 +57,9 @@ Projeto desenvolvido como plataforma completa para gerenciamento de eventos corp
 
 ---
 
-## 📦 AccentureApp - Instruções de Implantação
+## 📦 Concierge Digital App - Instruções de Implantação
 
-Logo abaixo descrevemos o passo a passo completo para implantação do projeto AccentureApp, permitindo que qualquer pessoa possa rodar a aplicação do zero, em um novo ambiente.
+Logo abaixo descrevemos o passo a passo completo para implantação do projeto Concierge Digital App, permitindo que qualquer pessoa possa rodar a aplicação do zero, em um novo ambiente.
 
 ---
 
@@ -76,7 +77,7 @@ Antes de começar, certifique-se de ter instalado:
 ## 📁 Estrutura do Projeto
 
 ```
-AccentureApp/
+concierge-digital-app/
 ├── public/
 │   ├── index.html
 │   ├── accenture-logo.png
@@ -132,8 +133,8 @@ Se você não possui esses arquivos ainda, clone o repositório fornecido.
 Você pode clonar via Git:
 
 ```bash
-git clone https://github.com/hiltonnery/AccentureApp.git
-cd AccentureApp
+git clone https://github.com/hiltonnery/concierge-digital-app.git
+cd concierge-digital-app
 ```
 
 ### **2. Instale as dependências do projeto**
@@ -173,7 +174,7 @@ npm run preview
 http://localhost:5173
 ```
 
-Você verá a tela de login do AccentureApp, com interface moderna e responsiva.
+Você verá a tela de login do Concierge Digital App, com interface moderna e responsiva.
 
 ---
 
