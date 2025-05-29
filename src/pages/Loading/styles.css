@@ -1,16 +1,40 @@
-/* Loading Component Styles - Mobile Full Screen */
+/* Loading Component Styles - Dark Accenture Theme */
 .loading-container {
-  position: fixed;  /* Ocupa a tela toda */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;     /* 100% da largura da viewport */
-  height: 100vh;    /* 100% da altura da viewport */
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a0033 30%, #2d0052 70%, #A100FF 100%);
   font-family: 'Inter', sans-serif;
-  z-index: 9999;    /* Fica por cima de tudo */
+  z-index: 9999;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de particles no fundo igual Welcome */
+.loading-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(161, 0, 255, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 80% 70%, rgba(161, 0, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 150px 150px, 100px 100px, 200px 200px;
+  animation: float-dots 15s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes float-dots {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-15px) translateX(8px); }
 }
 
 .loading-content {
@@ -18,6 +42,8 @@
   color: white;
   width: 100%;
   padding: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .loading-spinner {
@@ -25,35 +51,100 @@
 }
 
 .spinner {
-  width: 60px;
-  height: 60px;
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  border-top: 4px solid white;
+  width: 80px;
+  height: 80px;
+  border: 4px solid rgba(161, 0, 255, 0.2);
+  border-top: 4px solid #A100FF;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto;
+  box-shadow: 
+    0 0 20px rgba(161, 0, 255, 0.4),
+    inset 0 0 20px rgba(161, 0, 255, 0.1);
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% { 
+    transform: rotate(0deg);
+    box-shadow: 
+      0 0 20px rgba(161, 0, 255, 0.4),
+      inset 0 0 20px rgba(161, 0, 255, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(161, 0, 255, 0.6),
+      inset 0 0 30px rgba(161, 0, 255, 0.2);
+  }
+  100% { 
+    transform: rotate(360deg);
+    box-shadow: 
+      0 0 20px rgba(161, 0, 255, 0.4),
+      inset 0 0 20px rgba(161, 0, 255, 0.1);
+  }
 }
 
 .loading-text {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #ffffff 0%, #A100FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(161, 0, 255, 0.3);
+  animation: text-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 20px rgba(161, 0, 255, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 40px rgba(161, 0, 255, 0.6);
+  }
 }
 
 .loading-subtitle {
   font-size: 16px;
   opacity: 0.8;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  animation: fade-pulse 3s ease-in-out infinite;
+}
+
+@keyframes fade-pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.6; }
+}
+
+/* Adiciona o símbolo Accenture no loading */
+.loading-symbol {
+  font-size: 40px;
+  font-weight: bold;
+  color: #A100FF;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  text-shadow: 
+    0 0 20px rgba(161, 0, 255, 0.8),
+    0 0 40px rgba(161, 0, 255, 0.4);
+  animation: symbol-pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes symbol-pulse {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 /* Mobile específico */
 @media (max-width: 768px) {
   .loading-text {
-    font-size: 20px;
+    font-size: 24px;
   }
   
   .loading-subtitle {
@@ -61,7 +152,26 @@
   }
   
   .spinner {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .loading-symbol {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loading-text {
+    font-size: 20px;
+  }
+  
+  .spinner {
     width: 50px;
     height: 50px;
+  }
+  
+  .loading-symbol {
+    font-size: 30px;
   }
 }

@@ -22,11 +22,14 @@ function Welcome() {
         </div>
         
         <div className="welcome-main">
-          <h1 className="welcome-title">
-            Boas<br />
-            vindas,<br />
-            {firstName}!
-          </h1>
+          <div className="title-with-symbol">
+            <div className="welcome-symbol">&gt;</div>
+            <h1 className="welcome-title">
+              Boas<br />
+              vindas,<br />
+              {firstName}!
+            </h1>
+          </div>
           
           <p className="welcome-message">
             Eu sou o seu concierge de visitas e vou te passar dicas, dados e te acompanhar durante toda a jornada no Hub da Accenture

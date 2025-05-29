@@ -1,16 +1,39 @@
-/* Welcome Component Styles */
+/* Welcome Component Styles - Dark Accenture Theme */
 .welcome-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a0033 30%, #2d0052 70%, #A100FF 100%);
   color: white;
   font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
+}
+
+/* Efeito de particles/dots no fundo */
+.welcome-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(161, 0, 255, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 80% 70%, rgba(161, 0, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 150px 150px, 100px 100px, 200px 200px;
+  animation: float-dots 15s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes float-dots {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-15px) translateX(8px); }
 }
 
 .welcome-content {
@@ -18,16 +41,19 @@
   padding: 40px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 .welcome-header {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .welcome-arrow {
   font-size: 28px;
   font-weight: bold;
-  color: white;
+  color: #A100FF;
+  text-shadow: 0 0 10px rgba(161, 0, 255, 0.5);
 }
 
 .welcome-main {
@@ -37,28 +63,69 @@
   justify-content: center;
 }
 
+/* Título com símbolo próximo */
+.title-with-symbol {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
 .welcome-title {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 30px;
   text-align: left;
+  background: linear-gradient(135deg, #ffffff 0%, #A100FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(161, 0, 255, 0.3);
+}
+
+/* Símbolo próximo ao título */
+.welcome-symbol {
+  font-size: 48px;
+  font-weight: bold;
+  color: #A100FF;
+  opacity: 0.9;
+  margin-top: 5px;
+  text-shadow: 
+    0 0 15px rgba(161, 0, 255, 0.8),
+    0 0 30px rgba(161, 0, 255, 0.4);
+  animation: pulse-symbol 3s ease-in-out infinite;
+}
+
+@keyframes pulse-symbol {
+  0%, 100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+    text-shadow: 
+      0 0 20px rgba(161, 0, 255, 1),
+      0 0 40px rgba(161, 0, 255, 0.6);
+  }
 }
 
 .welcome-message {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 40px;
   max-width: 400px;
-  opacity: 0.95;
+  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .join-button {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, rgba(161, 0, 255, 0.3), rgba(0, 0, 0, 0.4));
+  border: 2px solid rgba(161, 0, 255, 0.5);
   color: white;
   padding: 15px 25px;
   border-radius: 30px;
@@ -67,12 +134,23 @@
   cursor: pointer;
   transition: all 0.3s ease;
   width: fit-content;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  box-shadow: 
+    0 8px 32px rgba(161, 0, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .join-button:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, rgba(161, 0, 255, 0.5), rgba(0, 0, 0, 0.6));
+  border-color: rgba(161, 0, 255, 0.8);
   transform: translateY(-2px);
+  box-shadow: 
+    0 12px 40px rgba(161, 0, 255, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.join-button:active {
+  transform: translateY(0px);
 }
 
 .join-arrow {
@@ -87,8 +165,10 @@
   right: 20px;
   text-align: center;
   font-size: 12px;
-  opacity: 0.7;
+  opacity: 0.6;
   font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  z-index: 2;
 }
 
 /* Mobile responsivo */
@@ -97,7 +177,15 @@
     padding: 30px 20px;
   }
   
+  .title-with-symbol {
+    gap: 10px;
+  }
+  
   .welcome-title {
+    font-size: 36px;
+  }
+  
+  .welcome-symbol {
     font-size: 36px;
   }
   
@@ -112,12 +200,16 @@
   }
   
   .welcome-header {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 }
 
 @media (max-width: 480px) {
   .welcome-title {
+    font-size: 32px;
+  }
+  
+  .welcome-symbol {
     font-size: 32px;
   }
   
