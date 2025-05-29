@@ -245,7 +245,7 @@ function Schedule() {
              </div>
 
              <div className="modal-section">
-               <h3>👤 Palestrante</h3>
+               <h3>👤 Palestrante</h3>''
                <p>{selectedEvent.speaker}</p>
              </div>
 

@@ -7,7 +7,6 @@ function MyAgenda() {
   const [activeTab, setActiveTab] = useState('upcoming');
   const [selectedEvent, setSelectedEvent] = useState(null);
 
-  // Dados dos eventos agendados (usando os mesmos palestrantes)
   const myEvents = {
     upcoming: [
       {
