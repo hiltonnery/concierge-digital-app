@@ -84,8 +84,6 @@ concierge-digital-app/
 │   └── vite.svg
 ├── src/
 │   ├── components/
-│   │   ├── Dashboard.jsx
-│   │   ├── Dashboard.css
 │   │   ├── Loading.jsx
 │   │   ├── Loading.css
 │   │   ├── QRScanner.jsx
@@ -162,11 +160,6 @@ Para ambiente de desenvolvimento (com hot-reload):
 npm run dev
 ```
 
-Para build de produção:
-```bash
-npm run build
-npm run preview
-```
 
 ### **5. Acesse o sistema no navegador**
 
@@ -187,31 +180,13 @@ Você pode testar funcionalidades como:
 - **Código:** 123456
 
 ### **Funcionalidades Principais**
-- **Dashboard inteligente** com cards interativos
-- **Gestão de palestrantes** com modais detalhados
+- **Dashboard inteligente** com cards interativos e busca por IA
+- **Gestão de palestrantes** com modais detalhados e favoritos
 - **Sistema de inscrições** em palestras com controle de vagas
 - **Agenda personalizada** vs programação geral
-- **QR Scanner** para networking e check-in
-- **Perfil digital** com QR code próprio
-- **FAQ categorizado** com busca
-- **Design responsivo** em mobile e desktop
-
----
-
-## 🔧 Scripts Disponíveis
-
-```bash
-# Desenvolvimento com hot-reload
-npm run dev
-
-# Build para produção
-npm run build
-
-# Preview do build de produção
-npm run preview
-
-# Linting do código
-npm run lint
-```
+- **QR Scanner** para networking e check-in automático
+- **Perfil digital** com QR code próprio para networking
+- **FAQ categorizado** com busca inteligente por tópicos
+- **Design responsivo** otimizado para mobile e desktop
 
 ---
