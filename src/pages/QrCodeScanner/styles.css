@@ -1,0 +1,35 @@
+.qrcode-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  height: 100vh;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.scanner-box {
+  width: 250px;
+  height: 250px;
+  border: 4px solid #ffffff;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scanner-frame {
+  width: 80%;
+  height: 80%;
+  border: 2px dashed #ffffff;
+}
+
+.next-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

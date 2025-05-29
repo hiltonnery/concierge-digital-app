@@ -1,0 +1,127 @@
+/* Welcome Component Styles */
+.welcome-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.welcome-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-header {
+  margin-bottom: 60px;
+}
+
+.welcome-arrow {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.welcome-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.welcome-message {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  max-width: 400px;
+  opacity: 0.95;
+}
+
+.join-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  backdrop-filter: blur(10px);
+}
+
+.join-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.join-arrow {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.welcome-note {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* Mobile responsivo */
+@media (max-width: 768px) {
+  .welcome-content {
+    padding: 30px 20px;
+  }
+  
+  .welcome-title {
+    font-size: 36px;
+  }
+  
+  .welcome-message {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  
+  .join-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
+  .welcome-header {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 32px;
+  }
+  
+  .welcome-arrow {
+    font-size: 24px;
+  }
+}
