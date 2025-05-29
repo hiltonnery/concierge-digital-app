@@ -54,11 +54,6 @@ npm run dev
 # Acesse: http://localhost:5173
 \`\`\`
 
-## 📧 Contato
-
-**Hilton Nery**
-- GitHub: [@hiltonnery](https://github.com/hiltonnery)
-- LinkedIn: [Seu LinkedIn]
 
 ---
 ⭐ **Se gostou do projeto, deixe uma estrela!**" > README.md
