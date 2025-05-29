@@ -1,67 +1,68 @@
-echo "# Accenture Visitas - Events Platform 2025
 
-🎪 Plataforma completa para gerenciamento de eventos corporativos da Accenture
+> Plataforma completa para gerenciamento de eventos corporativos
 
-## 🚀 Tecnologias Utilizadas
-- **React.js** + **JavaScript ES6+**
-- **React Router DOM** - Navegação SPA
-- **Context API** - Gerenciamento de estado global
-- **CSS Modular** - Estilização responsiva
-- **Vite** - Build tool moderna e rápida
+[![Deploy](https://img.shields.io/badge/Deploy-Live-brightgreen)](SUA_URL_AQUI)
+[![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-5-purple)](https://vitejs.dev/)
 
-## 📱 Funcionalidades Principais
-- ✅ Sistema de Login completo (Email + Código de verificação)
+## 🌟 Demonstração
+
+🔗 **[VER DEMO AO VIVO](SUA_URL_AQUI)**
+
+### 🔐 Login de teste:
+- **Email:** admin@accenture.com  
+- **Código:** 123456
+
+## 📱 Funcionalidades
+
+- ✅ Sistema de autenticação completo
 - ✅ Dashboard inteligente com busca IA
-- ✅ Gestão completa de palestrantes com modais
+- ✅ Gestão de palestrantes e eventos
 - ✅ Agenda pessoal vs programação geral
-- ✅ QR Scanner para check-in e networking
+- ✅ QR Scanner para networking
 - ✅ Perfil digital personalizado
-- ✅ FAQ categorizado e responsivo
-- ✅ Design system Accenture (roxo + preto)
+- ✅ Design responsivo moderno
 
-## 🎨 Design Features
-- 🌟 Glassmorphism e gradientes
-- 📱 Mobile-first e totalmente responsivo
-- 🎯 Micro-interactions e animações suaves
-- 🎨 Paleta oficial Accenture (#A100FF)
+## 🎨 Screenshots
 
-## 🛠️ Como executar o projeto
+![Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Preview)
+
+## 🛠️ Tecnologias
+
+- **Frontend:** React 18 + Vite
+- **Roteamento:** React Router DOM
+- **Estado:** Context API
+- **Estilização:** CSS Modules + Flexbox/Grid
+- **Ícones:** Lucide React
+- **Build:** Vite
+
+## 🚀 Como executar
+
 \`\`\`bash
 # Clone o repositório
 git clone https://github.com/hiltonnery/AccentureApp.git
 
 # Entre na pasta
-cd AccentureVisitas
+cd AccentureApp
 
 # Instale as dependências
 npm install
 
-# Execute o projeto em modo desenvolvimento
+# Execute em modo desenvolvimento
 npm run dev
 
-# Acesse: http://localhost:3000
+# Acesse: http://localhost:5173
 \`\`\`
 
-## 📱 Fluxo da Aplicação
-1. **Login** → Email + Código
-2. **Loading** → Carregamento
-3. **Welcome** → Boas-vindas
-4. **Dashboard** → Portal principal
-5. **Funcionalidades** → Navegação livre
-
-## 🏗️ Arquitetura
-- **Component-Based** - Componentes reutilizáveis
-- **Context Pattern** - Estado global compartilhado
-- **CSS Modules** - Estilização isolada
-- **Hook Pattern** - Hooks nativos e customizados
-
 ## 📧 Contato
-Desenvolvido por **Hilton Nery**
+
+**Hilton Nery**
 - GitHub: [@hiltonnery](https://github.com/hiltonnery)
+- LinkedIn: [Seu LinkedIn]
 
 ---
-**© 2025 - Projeto acadêmico inspirado na Accenture**" > README.md
+⭐ **Se gostou do projeto, deixe uma estrela!**" > README.md
 
 git add README.md
-git commit -m "Adiciona README completo com documentação"
+git commit -m "Adiciona README completo com instruções"
 git push
