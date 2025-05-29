@@ -43,7 +43,7 @@ function LoggedArea() {
         <div className="header-content">
           <div className="header-logo">
             <div className="accenture-symbol">&gt;</div>
-            <span className="accenture-text">accenture</span>
+            <span className="accenture-text">Concierge</span>
           </div>
           <div className="user-info">
             <div className="user-avatar">
