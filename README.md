@@ -1,12 +1,67 @@
-# React + Vite
+echo "# Accenture Visitas - Events Platform 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎪 Plataforma completa para gerenciamento de eventos corporativos da Accenture
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
+- **React.js** + **JavaScript ES6+**
+- **React Router DOM** - Navegação SPA
+- **Context API** - Gerenciamento de estado global
+- **CSS Modular** - Estilização responsiva
+- **Vite** - Build tool moderna e rápida
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📱 Funcionalidades Principais
+- ✅ Sistema de Login completo (Email + Código de verificação)
+- ✅ Dashboard inteligente com busca IA
+- ✅ Gestão completa de palestrantes com modais
+- ✅ Agenda pessoal vs programação geral
+- ✅ QR Scanner para check-in e networking
+- ✅ Perfil digital personalizado
+- ✅ FAQ categorizado e responsivo
+- ✅ Design system Accenture (roxo + preto)
 
-## Expanding the ESLint configuration
+## 🎨 Design Features
+- 🌟 Glassmorphism e gradientes
+- 📱 Mobile-first e totalmente responsivo
+- 🎯 Micro-interactions e animações suaves
+- 🎨 Paleta oficial Accenture (#A100FF)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Como executar o projeto
+\`\`\`bash
+# Clone o repositório
+git clone https://github.com/hiltonnery/AccentureVisitas.git
+
+# Entre na pasta
+cd AccentureVisitas
+
+# Instale as dependências
+npm install
+
+# Execute o projeto em modo desenvolvimento
+npm run dev
+
+# Acesse: http://localhost:3000
+\`\`\`
+
+## 📱 Fluxo da Aplicação
+1. **Login** → Email + Código
+2. **Loading** → Carregamento
+3. **Welcome** → Boas-vindas
+4. **Dashboard** → Portal principal
+5. **Funcionalidades** → Navegação livre
+
+## 🏗️ Arquitetura
+- **Component-Based** - Componentes reutilizáveis
+- **Context Pattern** - Estado global compartilhado
+- **CSS Modules** - Estilização isolada
+- **Hook Pattern** - Hooks nativos e customizados
+
+## 📧 Contato
+Desenvolvido por **Hilton Nery**
+- GitHub: [@hiltonnery](https://github.com/hiltonnery)
+
+---
+**© 2025 - Projeto acadêmico inspirado na Accenture**" > README.md
+
+git add README.md
+git commit -m "Adiciona README completo com documentação"
+git push
