@@ -185,3 +185,4 @@ O código está disponível para fins de aprendizado, teste e desenvolvimento fu
 © 2025 Concierge Digital – Accenture SQUAD 18
  
 *Residência em Tecnologia Porto Digital*
+
